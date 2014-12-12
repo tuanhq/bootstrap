@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Table</title>
+	<link rel="stylesheet" href="plugin/css/bootstrap.css">
+	<script src="plugin/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="plugin/js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+	table,th,td {	
+		border-width: 2px;
+	}
+	</style>
+</head>
+
+<body>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th> <b>FirstName</b>
+				</th>
+				<th> <b>LastName</b>
+				</th>
+				<th>
+					<b>UserName</b>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h1>table-hover</h1>
+	<table class="table table-hover">
+		<tbody>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>
+						<b>FirstName</b>
+					</th>
+					<th>
+						<b>LastName</b>
+					</th>
+					<th>
+						<b>UserName</b>
+					</th>
+				</tr>
+			</thead>
+			<tr>
+				<td rowspan="2">1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@TwBootstrap</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td colspan="2">Jacob</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>Table striped and hover</h1>
+	<table class="table table-hover table-striped">
+		<tbody>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>
+						<b>FirstName</b>
+					</th>
+					<th>
+						<b>LastName</b>
+					</th>
+					<th>
+						<b>UserName</b>
+					</th>
+				</tr>
+			</thead>
+			<tr>
+				<td rowspan="2">1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@TwBootstrap</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td colspan="2">Jacob</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>Table hover, striped,border</h1>
+	<div class="table-responsive">
+		<table class="table table-bordered table-hover" >
+			<tbody>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>
+							<b>FirstName</b>
+						</th>
+						<th>
+							<b>LastName</b>
+						</th>
+						<th>
+							<b>UserName</b>
+						</th>
+					</tr>
+				</thead>
+				<tr>
+					<td >1</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@TwBootstrap</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td >Jacob</td>
+					<td>Hello</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td colspan="2">Larry the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

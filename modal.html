@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Modal</title>
+  <link rel="stylesheet" href="plugin/css/bootstrap.css">
+  <style type="text/css" media="screen"></style>
+
+</head>
+<body>
+  <div class="col-md-offset-1 col-md-11">
+    <div class="navbar">
+      <ul class="nav navbar-nav" >
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example" >Click me to open modal small</button>
+    <div class="modal fade bs-example-modal-sm" id="example" tabindex="-1" role="dialog" aria-labelledby="myModallable"
+     ara-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="myModallable">Modal title</h4>
+            <div class="modal-body">Hello world</div>
+            <div class="modal-footer">
+              <button class="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button class="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example2" >Click me to open modal small no animation </button>
+    <div class="modal bs-example-modal-sm" id="example2" tabindex="-1" role="dialog" aria-labelledby="myModallable"
+     ara-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="myModallable">Modal title</h4>
+            <div class="modal-body">Hello world</div>
+            <div class="modal-footer">
+              <button class="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button class="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h1>Open form large</h1>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myForm">Open form</button>
+
+    <div class="modal fade bs-example-modal-lg" id="myForm" tabindex="-1" role="dialog" aria-labelledby="myForm" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 classs="modal-title" id="myModalLable">Form basic</h4>
+          </div>
+          <div class="modal-body">
+            <!---form -->
+            <form class="form-horizontal" role="form">
+
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email"></div>
+              </div>
+
+              <div class="form-group">
+                <lable class="col-sm-2 control-label" for="inputPassword3">Password</lable>
+                <div class="col-sm-10">
+                  <input tye="password" class="form-control" id="inputPassword3" placeholder="Password"></div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <lable>
+                      <input type="checkbox">Remember me</lable>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Open youtube video</h1>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myVideo">Open frame</button>
+
+    <div class="modal fade" id="myVideo" tabindex="-1" role="dialog" aria-labelledby="myVideo" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 classs="modal-title" id="myModalLable">Form basic</h4>
+          </div>
+          <div class="modal-body" style="text-align: center">
+            <!---frame -->
+            <iframe src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="plugin/js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="plugin/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

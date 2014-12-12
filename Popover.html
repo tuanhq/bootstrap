@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popover</title>
+  <link rel="stylesheet" href="plugin/css/bootstrap.css">
+  <style type="text/css" media="screen"></style>
+</head>
+<body>
+  <!--navbar start-->
+  <nav class="navbar navbar-inverse" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">My web</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Page 1</a>
+          </li>
+          <li>
+            <a href="#">Page 2</a>
+          </li>
+          <li>
+            <a href="#">Page 3</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Page 4
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Page 4.1</a>
+              </li>
+              <li>
+                <a href="#">Page 4.2</a>
+              </li>
+              <li>
+                <a href="#">Page 4.3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form role="search" class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="text"></div>
+          <button class="btn btn-default" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--navbar end-->
+
+  <!--HEADER -->
+  <div class="container-fluid" style="min-height: 100px"></div>
+  <div class="col-md-2"></div>
+
+  <div class="col-md-10">
+    <h1>Example popover simple</h1>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="left" data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="right" data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="top" data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="bottom" data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+  </div>
+
+  <div class="col-md-offset-2 col-md-10" style="padding-top:200px;">
+    <h1>Example popover simple <br> dismiss on next click </h1>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="left" data-trigger="focus"  data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="right" data-trigger="focus"  data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="top" data-trigger="focus" data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+  data-placement="bottom" data-trigger="focus" data-content="rất vui khi bạn đã click chuột vào đây">Popover on left</button>
+  </div>
+
+  <!--FOOTER -->
+  <div class="container-fluid" style="min-height: 100px"></div>
+  <script src="plugin/js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="plugin/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  $(function () {
+  $('[data-toggle="popover"]').popover()
+});
+</script>
+</body>
+</html>

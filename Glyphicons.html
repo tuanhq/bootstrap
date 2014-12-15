@@ -3,9 +3,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Glyphicon</title>
-  <link rel="stylesheet" href="plugin/css/bootstrap.css">   
-  
-</head>
+  <link rel="stylesheet" href="plugin/css/bootstrap.css"></head>
 <body>
   <!--navbar start-->
   <nav class="navbar navbar-inverse" >
@@ -98,9 +96,11 @@
 
   <h1>List Dropdow</h1>
   <div class="col-md-offset-2 col-md-10">
+
+    <h2>Drop menu normal</h2>
     <div class="dropdown">
       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" 
-        aria-expanded="true">
+          aria-expanded="true">
         Dropdown
         <span class="caret"></span>
       </button>
@@ -119,6 +119,57 @@
         </li>
       </ul>
     </div>
+
+    <h2>Drop menu have header</h2>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" 
+        aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="dropdown-header">Header1</li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action1</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action2</a>
+        </li>
+        <li role="presentation" class="dropdown-header">Header2</li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action3</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action4</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <h2>Drop menu have div</h2>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" 
+      aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">        
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action1</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action2</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action3</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="#" tabindex="-1">Action4</a>
+        </li>
+      </ul>
+    </div>
+
   </div>
   <script src="plugin/js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="plugin/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
